@@ -5,7 +5,7 @@ function Home() {
       <div className="Home" >
 <div class="contenant">
 <img src={burger} alt="burger" className='burger' /> 
-  <div class="button"><Link to="/destination"><button className="ButtonOrd">Order</button></Link></div>
+  <div class="button"><Link to="/Commande"><button className="ButtonOrd">Order Online</button></Link></div>
 </div>      
       </div>
     );

@@ -1,0 +1,128 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    font-size: 18px;
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 3;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background-color: rgb(236, 227, 227);
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+    color: black;
+}
+
+.annuler-modal {
+
+    padding: 5px 7px;
+}
+.confirmer-modal {
+
+    padding: 5px 7px;
+    margin: 0px 0px 0px 200px;
+}
+  
+
+  .container{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    background-color:#ff780f;
+    
+  }
+  .heading{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1rem;
+    font-weight: bold;
+  
+  }
+  .img-holder{
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border: 3px black solid;
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
+  .img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  #input[type="file"] {
+      display: none;
+  }
+  .label{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .image-upload{
+    margin: auto;
+    width: 200px;
+      height: 50px;
+    color: white;
+    border-radius: 10px;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+  }
+  .material-icons
+  {
+    font-size: 40px;
+  }
+  .titrePoopUp
+  {
+    font-family: 'Brush Script MT', cursive;
+  }
+.labels
+{
+    font-family: Arial, Helvetica, sans-serif ;  
+    font-size: 16px;
+}
+.rateInput
+{
+    font-family: Arial, Helvetica, sans-serif ;  
+    font-size: 16px;
+    margin: 0px 0px 0px 20px;  
+}
+.InputRes
+{
+    width:100%;
+    padding:5px;
+    box-sizing:border-box;
+    background:none; 
+}

@@ -11,6 +11,14 @@
 {
   padding: 10px 30px;
 }
+img
+{
+  width: 90%;
+  height: 50%;
+  object-fit: contain;
+  margin: auto;
+  
+}
 .details
 {
   display: flex;
@@ -65,4 +73,238 @@ a:hover {text-decoration:underline;color: #ff780f;}
 {
   height: 100%;
   width: 100%;
+}
+.About
+{
+  padding: 50px;
+
+}
+.form
+{
+  width:340px;
+  height:500px;
+  background:#e6e6e6;
+  border-radius:8px;
+  box-shadow:0 0 40px -10px #000;
+  margin:calc(50vh - 220px) auto;
+  padding:20px 30px;
+  max-width:calc(100vw - 40px);
+  box-sizing:border-box;
+  font-family:'Montserrat',sans-serif;
+  position:relative}
+.TitleContact{
+  margin:10px 0;
+  padding-bottom:10px;
+  width:180px;
+  color:#ff780f;
+  border-bottom:3px solid #ff780f
+}
+.InputContact{
+  width:100%;
+  padding:5px;
+  box-sizing:border-box;
+  background:none;
+  outline:none;
+  resize:none;
+  border:0;
+  font-family:'Montserrat',sans-serif;
+  transition:all .3s;
+  border-bottom:2px solid #bebed2;
+  color: #000;
+}
+.InputContact:focus{
+  border-bottom:2px solid #78788c
+}
+p:before{
+  content:attr(type);
+  display:block;
+  margin:28px 0 0;
+  font-size:14px;
+  color:#5a5a5a
+}
+.SubmitContact{
+  float:right;
+  padding:8px 12px;
+  margin:8px 0 0;
+  font-family:'Montserrat',sans-serif;
+  border:2px solid #78788c;
+  background:0;
+  color:#5a5a6e;
+  cursor:pointer;
+  transition:all .3s
+}
+.SubmitContact:hover{
+  background:#78788c;
+  color:#fff
+}
+span{
+  margin:15px 10px 0px 20px;
+  color: #ff780f;
+}
+.ButtonAjout
+{
+  margin:0 5px 0 20px;
+}
+.menu
+{
+  width: 80%;
+ height: 700px;
+  float: left;
+}
+.card
+{
+/* display: grid;
+width: 80em;
+grid-gap: 1em; */
+border-style: inset;
+width: 300px;
+position: inherit;
+color: rgb(0, 0, 0);
+/* align-items: start ; */
+}
+.CommMenu
+{
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0px 0px 0px;
+  row-gap: 20px;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.imageburger
+{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: auto;
+  padding: 20px;
+
+}
+.e 
+{
+  padding:15px 0px 15px 7px ;
+  font-size: 20px;
+  color: #ff780f;
+}
+.description
+{
+  padding:0px 0px 5px 3px ;
+  font-size: 16px;
+}
+.prix
+{
+  font-size: 12px;
+  margin:0px 0px 0px 130px;
+}
+.buttonPanier
+{
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #4ac839;
+  color: #FFFFFF;
+  text-align: center;
+  width: 180px;
+  padding: 8px;
+  transition: all 0.5s;
+  cursor: pointer;
+  border: 1px solid #4ac839 ;
+  gap: 5px;
+  margin: auto;
+}
+.titrePanier
+{
+  padding: 0px 10px 0px 0px;
+  margin: 0px 0px 0px 30px;
+}
+.panier
+{
+  display: flex;
+  align-items: center;
+  margin: 0px 0px 15px 10px ;
+  justify-content: space-around;
+  gap: 10px;
+
+}
+.tabs
+{
+  width: 600px;
+  padding: 40px 150px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  margin: auto;
+  font-family: serif;
+  
+}
+.PanierName
+{
+  margin: 0px 100px 0px 0px;
+  font-size: 14px;
+}
+.facture
+{
+  margin: 20px 0px 0px 120px;
+ 
+}
+.PrixTot
+{
+  margin: 15px 15px;
+}
+.TitreFac
+{
+  margin: 0px 50px 20px 100px;
+}
+.ContactUs
+{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.icon
+{
+  font-size: 20px;
+  
+}
+.titre
+{
+  color: #ff780f;
+}
+.InputContact
+{
+  color: #000;
+}
+.FeedBack
+{
+  text-align: center;
+  font-size: 20px;
+}
+.DescriptionFeed
+{
+  padding: 10px;
+  font-size: 30px;
+}
+.ButtonsCategory
+{
+  display: flex;
+  align-content: space-between;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+}
+.ButtonReact
+{
+  margin: 0px 5px 15px 30px;
+  padding: 10px;
+}
+.DescriptionFeedRate li {
+  font-size: 30px !important;
+  color: #ff780f !important;
+  margin: 0px 0px 20px 0px;
+}
+.MessageFeed
+{
+  font-size: 16px;
+  width: 50pc;
+  margin: 20px;
 }
