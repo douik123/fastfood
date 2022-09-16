@@ -35,31 +35,31 @@ function Modale({AnnulerModal}) {
         var x9=info.Mar;
         var x10=info.Aar;
         var x11=info.adresse;
-        // if(x1.length<3)
-        // {
-        //     console.log(current.getFullYear())
-        //   return(alert("Nom invalide"))
-        // }
-        // if((x2.length<10)||(!(x2.includes("@"))))
-        // {
-        //   return(alert("Email invalide"))
-        // }
-        // if((isNaN(x5))||(x3.length<8))
-        // {
-        //   return(alert("num de tel  invalide"))
-        // }
-        // if(x11.length<5)
-        // {
-        //   return(alert("Adresse invalide"))
-        // }
-        // if((isNaN(x6))&&(x6===""))
-        // {
-        //   return(alert("Nombre de adulte invalide"))
-        // }
-        // if((isNaN(x7))&&(x7===""))
-        // {
-        //   return(alert("Nombre de  enfant invalide"))
-        // }
+        if(x1.length<3)
+        {
+            console.log(current.getFullYear())
+          return(alert("Nom invalide"))
+        }
+        if((x2.length<10)||(!(x2.includes("@"))))
+        {
+          return(alert("Email invalide"))
+        }
+        if((isNaN(x5))||(x3.length<8))
+        {
+          return(alert("num de tel  invalide"))
+        }
+        if(x11.length<5)
+        {
+          return(alert("Adresse invalide"))
+        }
+        if((isNaN(x6))&&(x6===""))
+        {
+          return(alert("Nombre de adulte invalide"))
+        }
+        if((isNaN(x7))&&(x7===""))
+        {
+          return(alert("Nombre de  enfant invalide"))
+        }
         if(((current.getDate()>x8)&&(current.getMonth()+1===Number(x9))&&(current.getFullYear()===Number(x10)))||(current.getMonth()+1>Number(x9)))
         {
           return(alert("Date invalide"))
@@ -77,13 +77,13 @@ function Modale({AnnulerModal}) {
             <div onClick={AnnulerModal} className="overlay"></div>
             <div className="modal-content">
                 <label>Name</label>
-            <input type="text" name="name" size="20" placeholder='Name' value={info.name} onChange={handlechange} className="InputRes"/>
+            <input type="text" name="name" size="20" placeholder='Name' required minlength="3" value={info.name} onChange={handlechange} className="InputRes"/>
             <label>Email</label>
-            <input type="text" name="email" size="20" placeholder='Email' value={info.email} onChange={handlechange} className="InputRes"/>
+            <input type="text" name="email" size="20" placeholder='Email' required minlength="10" value={info.email} onChange={handlechange} className="InputRes"/>
             <label>Téléphone</label>
-            <input type="text" name="number" size="20" placeholder='Téléphone' value={info.number} onChange={handlechange} className="InputRes"/>
+            <input type="text" name="number" size="20" placeholder='Téléphone' required minlength="8" value={info.number} onChange={handlechange} className="InputRes"/>
             <label>Adresse</label>
-            <input type="text" name="adresse" size="20" placeholder='Adresse' value={info.adresse} onChange={handlechange} className="InputRes"/>
+            <input type="text" name="adresse" size="20" placeholder='Adresse' required minlength="5" value={info.adresse} onChange={handlechange} className="InputRes"/>
             
            <label>Nombre Adultes</label>
             <input type="text" name="Nba" size="20" placeholder='Nombre Adultes' value={info.Nba} onChange={handlechange} className="InputRes"/>
@@ -144,7 +144,7 @@ function Modale({AnnulerModal}) {
 	</select>
     <br/>
             <label>Message</label>
-            <textarea rows="2" name="Message" cols="20" value={info.Message} onChange={handlechange} placeholder='Message' className="InputRes"></textarea>
+            <textarea rows="2" name="Message" cols="20" value={info.Message} required minlength="5" onChange={handlechange} placeholder='Message' className="InputRes"></textarea>
             
               <div>
               <button className="annuler-modal" onClick={AnnulerModal}>
